@@ -1,10 +1,22 @@
-import logo from './assets/images/vaani_logo.png'
-import poster from './assets/images/vaani-poster.png'
+import logo from "./assets/images/vaani_logo.png";
+import poster from "./assets/images/vaani-poster.png";
 
 const DOWNLOAD_URL =
-  'https://drive.google.com/drive/folders/1Iqww49iZkuqigTuKJJ5hi3GMVeCJ1EIZ?usp=sharing'
+  "https://drive.google.com/drive/folders/1Iqww49iZkuqigTuKJJ5hi3GMVeCJ1EIZ?usp=sharing";
 
-const features = ['Post text', 'Post images or videos', 'Like posts', 'Comment', 'Delete posts']
+const features = [
+  "Post text",
+  "Post images or videos",
+  "Like posts",
+  "Comment",
+  "Delete posts",
+];
+const installSteps = [
+  "Click on Download button.",
+  "Download the latest Vaani APK to your Android phone.",
+  "Open the APK file and allow installs from your browser or file manager if Android asks.",
+  "Tap Install, then open Vaani after setup finishes.",
+];
 
 function App() {
   return (
@@ -16,7 +28,8 @@ function App() {
           </div>
           <a
             href={DOWNLOAD_URL}
-            target='_blank'
+            target="_blank"
+            rel="noreferrer"
             className="rounded-full border border-white/15 bg-white px-5 py-2 text-sm font-semibold text-black transition hover:bg-white/90"
           >
             Download APK
@@ -49,7 +62,8 @@ function App() {
             <div className="mt-10 flex flex-wrap gap-4">
               <a
                 href={DOWNLOAD_URL}
-                target='_blank'
+                target="_blank"
+                rel="noreferrer"
                 className="rounded-full bg-white px-7 py-3 text-sm font-semibold text-black transition hover:bg-white/90"
               >
                 Download for Android
@@ -63,6 +77,22 @@ function App() {
               alt="Vaani poster"
               className="h-auto max-h-[70vh] w-full max-w-2xl rounded-2xl object-contain"
             />
+          </div>
+
+          <div className="mt-10 max-w-xl rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm">
+            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-white/45">
+              How to install
+            </p>
+            <ol className="mt-4 space-y-3 text-sm leading-7 text-white/75 sm:text-base">
+              {installSteps.map((step, index) => (
+                <li key={step} className="flex gap-3">
+                  <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full border border-white/15 text-xs font-semibold text-white">
+                    {index + 1}
+                  </span>
+                  <span>{step}</span>
+                </li>
+              ))}
+            </ol>
           </div>
         </section>
 
@@ -78,7 +108,7 @@ function App() {
         </footer>
       </div>
     </main>
-  )
+  );
 }
 
-export default App
+export default App;
