@@ -2,7 +2,7 @@ import logo from "./assets/images/vaani_logo.png";
 import poster from "./assets/images/vaani-poster.png";
 
 const DOWNLOAD_URL =
-  "https://www.mediafire.com/file/ohxn6zjegqj06x0/vaani-v1.0.0.apk/file";
+  "https://www.mediafire.com/file/bvrprt8sx56nuro/vaani-v1.2.0.apk/file";
 
 const features = [
   "Post text",
