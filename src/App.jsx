@@ -5,11 +5,13 @@ const DOWNLOAD_URL =
   "https://www.mediafire.com/file/gysc3f3y9z1i2f4/vaani-v1.2.0.apk/file";
 
 const features = [
-  "Post text",
-  "Post images or videos",
+  "Real-time chat with images & files",
+  "No screenshots or screen recording (privacy-first)",
+  "Text posts",
+  "Media posts (images & videos)",
   "Like posts",
-  "Comment",
-  "Delete posts",
+  "Comments",
+  "Delete your posts",
 ];
 const installSteps = [
   "Click on Download button.",
@@ -45,7 +47,7 @@ function App() {
               Vaani
             </h1>
             <p className="mt-5 max-w-lg text-lg leading-8 text-white/70 sm:text-xl">
-              A clean social app.
+            A clean, privacy-first social app.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-3">
